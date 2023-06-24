@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	//var AI = new MinimaxAI(aiType, playerType, 5);
 	var game = new TicTacToeBoard(aiType);
-	var AI2 = new MonteCarloAI(100, playerType);//new MinimaxAI2(5,aiType);//new RandomAI();
-	var AI = new MinimaxAI2(9,aiType);
+	var AI = new MonteCarloAI(100, aiType);//new MinimaxAI2(5,aiType);//new RandomAI();
+	var AI2 = new MinimaxAI2(9,playerType);
 	function gameLoop(){
 		//console.log("currentPlayer: "+game.getCurrentPlayer());
 		//console.log("human type: "+playerType);
